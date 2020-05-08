@@ -1,7 +1,9 @@
-const parser = require('../index');
-const loadJson = require('./__helpers/load-json');
+import 'regenerator-runtime/runtime';
+import parser from '../src/index';
+import loadJson from './__helpers/load-json';
 
 describe('Parse Request', () => {
+  //
   [
     {
       description: 'Event empty object',

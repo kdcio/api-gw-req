@@ -1,5 +1,5 @@
-const decode = require('./decode');
-const makeParser = require('./parse');
+import decode from './decode';
+import makeParser from './parse';
 
 const main = (event) => {
   const parser = makeParser({ decode });

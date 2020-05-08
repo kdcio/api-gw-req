@@ -1,7 +1,7 @@
 /**
  * Decode data from application/x-www-form-urlencoded
  */
-module.exports = (encodedString) => {
+export default (encodedString) => {
   const params = {};
 
   const parameterKeyValue = encodedString.split('&');

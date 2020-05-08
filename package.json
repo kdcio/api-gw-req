@@ -2,13 +2,14 @@
   "name": "@kdcsoftware/api-gw-req",
   "version": "0.1.0",
   "description": "Parse API Gateway request",
-  "main": "index.js",
+  "main": "lib/index.js",
   "type": "module",
   "scripts": {
+    "build:commonjs": "babel src --out-dir lib",
     "test": "jest --runInBand --no-cache",
     "watch": "jest --watchAll --runInBand",
-    "lint:fix": "eslint index.js lib/*.js __tests__/*.js --fix",
-    "lint": "eslint index.js lib/*.js __tests__/*.js"
+    "lint:fix": "eslint lib --ext .js --fix",
+    "lint": "eslint lib --ext .js"
   },
   "author": "Melchor Bungalso <melchor@kdcsoftware.com> (https://www.kdcsoftware.com)",
   "contributors": [
@@ -23,6 +24,10 @@
     "lambda"
   ],
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^26.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -32,7 +37,8 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "regenerator-runtime": "^0.13.5"
   },
   "husky": {
     "hooks": {

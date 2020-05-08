@@ -1,5 +1,5 @@
-const fs = require('fs');
-const { resolve } = require('path');
+import fs from 'fs';
+import { resolve } from 'path';
 
 const loadJson = (file) => {
   const path = resolve(__dirname, '../fixtures/');
@@ -7,4 +7,4 @@ const loadJson = (file) => {
   return JSON.parse(jsonString);
 };
 
-module.exports = loadJson;
+export default loadJson;

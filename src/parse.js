@@ -36,4 +36,4 @@ const makeParser = ({ decode }) => {
   return parser;
 };
 
-module.exports = makeParser;
+export default makeParser;
