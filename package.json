@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --watchAll --runInBand",
+    "test": "jest --runInBand",
+    "watch": "jest --watchAll --runInBand",
     "lint:fix": "eslint index.js lib/*.js __tests__/*.js --fix",
     "lint": "eslint index.js lib/*.js __tests__/*.js"
   },
