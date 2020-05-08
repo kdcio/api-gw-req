@@ -1,9 +1,6 @@
 module.exports = {
   testEnvironment: 'node',
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '__tests__/fixtures',
-    '__tests__/__helpers',
-  ],
+  testPathIgnorePatterns: ['/node_modules/', '/__tests__/__helpers'],
   collectCoverage: true,
+  coverageReporters: ['text', 'html'],
 };
