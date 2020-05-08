@@ -1,0 +1,11 @@
+{
+  "path": "",
+  "method": "POST",
+  "query": {},
+  "headers": {},
+  "ip": "",
+  "userAgent": "",
+  "pathParams": "",
+  "body": { "message": "hello", "name": "world" },
+  "authorizer": {}
+}

@@ -18,6 +18,11 @@ describe('Parse Request', () => {
       event: loadJson('events/post.json'),
       expected: loadJson('expected/post.json'),
     },
+    {
+      description: 'POST form event',
+      event: loadJson('events/form.json'),
+      expected: loadJson('expected/form.json'),
+    },
   ].forEach(({ description, event, expected }) => {
     test(description, async () => {
       const request = parser(event);
