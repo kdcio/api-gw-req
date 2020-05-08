@@ -1,8 +1,7 @@
 .*
 __tests__
 coverage
-node_modules
-webpack.config.js
 src
 codecov.yml
 jest.config.cjs
+!lib
