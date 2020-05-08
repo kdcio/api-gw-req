@@ -5,10 +5,8 @@
   "main": "lib/index.js",
   "type": "module",
   "scripts": {
-    "build": "npm run clean && npm run build:commonjs && npm run build:umd && npm run build:umd:min",
+    "build": "npm run clean && npm run build:commonjs",
     "build:commonjs": "babel src --out-dir lib",
-    "build:umd": "cross-env FILE_NAME=api-gw-req webpack",
-    "build:umd:min": "cross-env NODE_ENV=production npm run build:umd",
     "clean": "rimraf lib dist",
     "test": "jest --runInBand --no-cache",
     "watch": "jest --watchAll --runInBand",
@@ -34,7 +32,6 @@
     "@babel/preset-env": "^7.9.6",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.0.1",
-    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-config-prettier": "^6.11.0",
@@ -46,9 +43,7 @@
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "regenerator-runtime": "^0.13.5",
-    "rimraf": "^3.0.2",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "rimraf": "^3.0.2"
   },
   "husky": {
     "hooks": {
