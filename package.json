@@ -1,0 +1,40 @@
+{
+  "name": "@kdcsoftware/api-gw-req",
+  "version": "0.1.0",
+  "description": "Parse API Gateway request",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --watch --runInBand",
+    "lint:fix": "eslint index.js lib/*.js __tests__/*.js --fix",
+    "lint": "eslint index.js lib/*.js __tests__/*.js"
+  },
+  "author": "Melchor Bungalso <melchor@kdcsoftware.com> (https://www.kdcsoftware.com)",
+  "contributors": [
+    "Ian Dela Cruz <ian@kdcsoftware.com> (https://www.kdcsoftware.com)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kdc",
+    "aws",
+    "api",
+    "gateway",
+    "lambda"
+  ],
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
