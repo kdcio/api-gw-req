@@ -21,13 +21,19 @@
   "contributors": [
     "Ian Dela Cruz <ian@kdcsoftware.com> (https://www.kdcsoftware.com)"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kdcsoftware/api-gw-req"
+  },
+  "homepage": "https://github.com/kdcsoftware/api-gw-req",
   "license": "MIT",
   "keywords": [
     "kdc",
     "aws",
     "api",
     "gateway",
-    "lambda"
+    "lambda",
+    "request"
   ],
   "devDependencies": {
     "@babel/cli": "^7.8.4",
