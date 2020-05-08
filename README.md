@@ -1,5 +1,11 @@
 # API Gateway Request Parser
 
+![ver](https://img.shields.io/npm/v/@kdcsoftware/api-gw-req?style=for-the-badge)
+![build](https://img.shields.io/github/workflow/status/kdcsoftware/api-gw-req/build?style=for-the-badge)
+![codecov](https://img.shields.io/codecov/c/github/kdcsoftware/api-gw-req?style=for-the-badge)
+![size](https://img.shields.io/bundlephobia/min/@kdcsoftware/api-gw-req?style=for-the-badge)
+![license](https://img.shields.io/github/license/kdcsoftware/api-gw-req?style=for-the-badge)
+
 This module will parse the event object (that came from API Gateway) in lambda and create a new object with all unnecessary fields stripped out.
 
 ## Install
