@@ -22,5 +22,3 @@ jobs:
       - run: npm run lint
       - run: npm run coverage
       - run: curl -s https://codecov.io/bash | bash
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
