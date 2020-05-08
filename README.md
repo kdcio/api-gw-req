@@ -65,3 +65,7 @@ Sample `request` object:
 | pathParams | object | Path parameters if defined in API Gateway       |
 | body       | object | Body parsed as json or as urlencoded form data. |
 | authorizer | object | Authorizer object                               |
+
+## See also
+
+[@kdcsoftware/api-gw-resp](https://github.com/kdcsoftware/api-gw-resp)
