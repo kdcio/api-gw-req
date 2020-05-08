@@ -7,6 +7,5 @@
   "userAgent": "",
   "pathParams": "",
   "body": {},
-  "authorizer": {},
-  "pathParameters": {}
+  "authorizer": {}
 }
