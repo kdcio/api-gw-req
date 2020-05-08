@@ -1,6 +1,6 @@
 {
   "name": "@kdcsoftware/api-gw-req",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Parse API Gateway request",
   "main": "lib/index.js",
   "files": [
