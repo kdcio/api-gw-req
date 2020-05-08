@@ -4,4 +4,3 @@ coverage
 src
 codecov.yml
 jest.config.cjs
-!lib
