@@ -1,4 +1,5 @@
 {
   "httpMethod": "POST",
-  "body": "message=hello&name=world"
+  "body": "message=hello&name=world",
+  "requestContext": { "authorizer": "dev" }
 }

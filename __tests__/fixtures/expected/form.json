@@ -7,5 +7,5 @@
   "userAgent": "",
   "pathParams": "",
   "body": { "message": "hello", "name": "world" },
-  "authorizer": {}
+  "authorizer": "dev"
 }
