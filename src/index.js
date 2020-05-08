@@ -1,5 +1,5 @@
-const decode = require('./lib/decode');
-const makeParser = require('./lib/parse');
+const decode = require('./decode');
+const makeParser = require('./parse');
 
 const main = (event) => {
   const parser = makeParser({ decode });
