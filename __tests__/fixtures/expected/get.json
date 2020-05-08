@@ -1,0 +1,24 @@
+{
+  "path": "/users/me",
+  "method": "GET",
+  "query": {},
+  "headers": {
+    "Host": "localhost:8101",
+    "Connection": "keep-alive",
+    "Origin": "http://localhost:8100",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
+    "content-type": "application/json",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-site",
+    "Sec-Fetch-Mode": "cors",
+    "Referer": "http://localhost:8100/",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9,th;q=0.8"
+  },
+  "ip": "127.0.0.1",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
+  "pathParams": { "proxy": "me" },
+  "body": {},
+  "authorizer": {},
+  "pathParameters": { "proxy": "me" }
+}

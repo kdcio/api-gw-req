@@ -1,0 +1,63 @@
+{
+  "body": null,
+  "headers": {
+    "Host": "localhost:8101",
+    "Connection": "keep-alive",
+    "Origin": "http://localhost:8100",
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
+    "content-type": "application/json",
+    "Accept": "*/*",
+    "Sec-Fetch-Site": "same-site",
+    "Sec-Fetch-Mode": "cors",
+    "Referer": "http://localhost:8100/",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Accept-Language": "en-US,en;q=0.9,th;q=0.8"
+  },
+  "httpMethod": "GET",
+  "multiValueHeaders": {
+    "Host": ["localhost:8101"],
+    "Connection": ["keep-alive"],
+    "Origin": ["http://localhost:8100"],
+    "User-Agent": [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36"
+    ],
+    "content-type": ["application/json"],
+    "Accept": ["*/*"],
+    "Sec-Fetch-Site": ["same-site"],
+    "Sec-Fetch-Mode": ["cors"],
+    "Referer": ["http://localhost:8100/"],
+    "Accept-Encoding": ["gzip, deflate, br"],
+    "Accept-Language": ["en-US,en;q=0.9,th;q=0.8"]
+  },
+  "multiValueQueryStringParameters": null,
+  "path": "/users/me",
+  "pathParameters": { "proxy": "me" },
+  "queryStringParameters": null,
+  "requestContext": {
+    "accountId": "offlineContext_accountId",
+    "apiId": "offlineContext_apiId",
+    "httpMethod": "GET",
+    "identity": {
+      "accountId": "offlineContext_accountId",
+      "apiKey": "offlineContext_apiKey",
+      "caller": "offlineContext_caller",
+      "cognitoAuthenticationProvider": "offlineContext_cognitoAuthenticationProvider",
+      "cognitoAuthenticationType": "offlineContext_cognitoAuthenticationType",
+      "cognitoIdentityId": "offlineContext_cognitoIdentityId",
+      "cognitoIdentityPoolId": "offlineContext_cognitoIdentityPoolId",
+      "sourceIp": "127.0.0.1",
+      "user": "offlineContext_user",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
+      "userArn": "offlineContext_userArn"
+    },
+    "protocol": "HTTP/1.1",
+    "requestId": "offlineContext_requestId_ck38asmqx000d26necwg8eki4",
+    "requestTimeEpoch": 1574315489802,
+    "resourceId": "offlineContext_resourceId",
+    "resourcePath": "/users/{proxy*}",
+    "stage": "local"
+  },
+  "resource": "/users/{proxy*}",
+  "stageVariables": null,
+  "isOffline": true
+}
