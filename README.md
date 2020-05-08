@@ -5,18 +5,18 @@ This module will parse the event object (that came from API Gateway) in lambda a
 ## Install
 
 ```bash
-npm i api-gw-req
+npm i @kdcsoftware/api-gw-req
 ```
 
 ## Usage
 
 ```js
-const parser = require('api-gw-req');
+const parser = require('@kdcsoftware/api-gw-req');
 
 module.exports = (event) => {
-    const request = parser(event);
-    console.log(request);
-}
+  const request = parser(event);
+  console.log(request);
+};
 ```
 
 Sample `request` object:
@@ -45,7 +45,6 @@ Sample `request` object:
   "body": {},
   "authorizer": {}
 }
-
 ```
 
 ## Parsed Object
