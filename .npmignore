@@ -1,5 +1,5 @@
 .*
-__tests__
+tests
 coverage
 src
 codecov.yml
