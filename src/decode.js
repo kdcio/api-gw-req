@@ -4,6 +4,8 @@
 export default (encodedString) => {
   const params = {};
 
+  if (!encodedString) return params;
+
   const parameterKeyValue = encodedString.split('&');
   parameterKeyValue.forEach((value) => {
     const keyValue = value.split('=');
