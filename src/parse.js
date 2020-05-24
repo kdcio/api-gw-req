@@ -1,4 +1,13 @@
 const makeParser = ({ decode }) => {
+  const parseBody = (body) => {
+    if (!body) return {};
+    try {
+      return JSON.parse(body);
+    } catch (e) {
+      return decode(body);
+    }
+  };
+
   const parser = (event) => {
     const request = {};
 
@@ -16,14 +25,7 @@ const makeParser = ({ decode }) => {
 
     request.pathParams = event.pathParameters || '';
 
-    request.body = {};
-    if (event.body) {
-      try {
-        request.body = JSON.parse(event.body);
-      } catch (e) {
-        request.body = decode(event.body);
-      }
-    }
+    request.body = parseBody(event.body);
 
     request.authorizer = {};
     if (event.requestContext && event.requestContext.authorizer) {
