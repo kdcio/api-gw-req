@@ -6,7 +6,7 @@
 [![size](https://img.shields.io/bundlephobia/min/@kdcsoftware/api-gw-req?style=for-the-badge)](https://bundlephobia.com/result?p=@kdcsoftware/api-gw-req)
 [![license](https://img.shields.io/github/license/kdcsoftware/api-gw-req?style=for-the-badge)](https://github.com/kdcsoftware/api-gw-req/blob/master/LICENSE)
 
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/kdcsoftware/api-gw-req?style=for-the-badge)](https://api.codeclimate.com/v1/badges/1b3fb72854c0f527cd26/maintainability) [![Code Issues](https://img.shields.io/codeclimate/issues/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req/issues)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req) [![Code Issues](https://img.shields.io/codeclimate/issues/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req/issues)
 [![Technical Debt](https://img.shields.io/codeclimate/tech-debt/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req/trends/technical_debt)
 
 This module will parse the event object (that came from API Gateway) in lambda and create a new object with all unnecessary fields stripped out.
