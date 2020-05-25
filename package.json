@@ -8,14 +8,15 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "npm run clean && npm run build:commonjs",
+    "build": "npm run clean && npm run bundle",
     "build:commonjs": "babel src --out-dir lib",
     "clean": "rimraf lib dist",
     "test": "jest --no-cache",
     "watch": "jest --watchAll",
     "coverage": "npm test -- --coverage",
     "lint:fix": "eslint src --ext .js --fix",
-    "lint": "eslint src --ext .js"
+    "lint": "eslint src --ext .js",
+    "bundle": "parcel build src/index.js --out-dir lib"
   },
   "author": "Melchor Bungalso <melchor@kdcsoftware.com> (https://www.kdcsoftware.com)",
   "contributors": [
@@ -55,10 +56,18 @@
     "husky": "^4.2.5",
     "jest": "^26.0.1",
     "lint-staged": "^10.2.2",
+    "parcel-bundler": "^1.12.4",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "regenerator-runtime": "^0.13.5",
     "rimraf": "^3.0.2"
+  },
+  "targets": {
+    "main": {
+      "engines": {
+        "node": ">=10.x"
+      }
+    }
   },
   "husky": {
     "hooks": {
