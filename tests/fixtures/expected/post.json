@@ -2,10 +2,12 @@
   "path": "",
   "method": "POST",
   "query": {},
-  "headers": {},
+  "headers": {
+    "content-type": "application/json"
+  },
   "ip": "",
   "userAgent": "",
-  "pathParams": "",
+  "params": "",
   "body": { "message": "hello world" },
   "authorizer": {}
 }

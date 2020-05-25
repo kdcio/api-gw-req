@@ -1,4 +1,7 @@
 {
   "httpMethod": "POST",
+  "headers": {
+    "content-type": "application/json"
+  },
   "body": "{\"message\":\"hello world\"}"
 }

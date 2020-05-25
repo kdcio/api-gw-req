@@ -17,6 +17,8 @@ This module will parse the event object (that came from API Gateway) in lambda a
 npm i @kdcsoftware/api-gw-req
 ```
 
+_Note: Breaking change from v0.1.x to 0.2.x: **pathParams** change to **params**._
+
 ## Usage
 
 ```js
@@ -36,21 +38,21 @@ Sample `request` object:
   "method": "GET",
   "query": {},
   "headers": {
-    "Host": "localhost:8101",
-    "Connection": "keep-alive",
-    "Origin": "http://localhost:8100",
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
+    "host": "localhost:8101",
+    "connection": "keep-alive",
+    "origin": "http://localhost:8100",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
     "content-type": "application/json",
-    "Accept": "*/*",
-    "Sec-Fetch-Site": "same-site",
-    "Sec-Fetch-Mode": "cors",
-    "Referer": "http://localhost:8100/",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Accept-Language": "en-US,en;q=0.9,th;q=0.8"
+    "accept": "*/*",
+    "sec-fetch-site": "same-site",
+    "sec-fetch-mode": "cors",
+    "referrer": "http://localhost:8100/",
+    "accept-encoding": "gzip, deflate, br",
+    "accept-language": "en-US,en;q=0.9,th;q=0.8"
   },
   "ip": "127.0.0.1",
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
-  "pathParams": { "proxy": "me" },
+  "params": { "proxy": "me" },
   "body": {},
   "authorizer": {}
 }

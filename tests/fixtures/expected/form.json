@@ -2,10 +2,10 @@
   "path": "",
   "method": "POST",
   "query": {},
-  "headers": {},
+  "headers": { "content-type": "application/x-www-form-urlencoded" },
   "ip": "",
   "userAgent": "",
-  "pathParams": "",
+  "params": "",
   "body": { "message": "hello", "name": "world" },
   "authorizer": "dev"
 }
