@@ -1,4 +1,4 @@
-import parser from '../src/body';
+import parser from '../src/parsers/body';
 
 describe('Parse body', () => {
   [

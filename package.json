@@ -3,10 +3,10 @@
   "version": "0.2.0",
   "description": "Parse API Gateway request",
   "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "files": [
     "lib/*"
   ],
-  "type": "module",
   "scripts": {
     "build": "npm run clean && npm run bundle",
     "build:commonjs": "babel src --out-dir lib",
@@ -14,9 +14,10 @@
     "test": "jest --no-cache",
     "watch": "jest --watchAll",
     "coverage": "npm test -- --coverage",
-    "lint:fix": "eslint src --ext .js --fix",
-    "lint": "eslint src --ext .js",
-    "bundle": "parcel build src/index.js --out-dir lib"
+    "lint:fix": "eslint src --ext .ts --fix",
+    "lint": "eslint src --ext .ts",
+    "bundle": "ncc build src/index.ts -m -o lib",
+    "tsc": "tsc src/index.ts --noEmit"
   },
   "author": "Melchor Bungalso <melchor@kdcsoftware.com> (https://www.kdcsoftware.com)",
   "contributors": [
@@ -38,29 +39,36 @@
     "parser"
   ],
   "dependencies": {
-    "@babel/runtime": "^7.9.6"
+    "@babel/runtime": "^7.11.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-runtime": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
     "@serverless/event-mocks": "^1.1.1",
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "@vercel/ncc": "^0.24.1",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^26.0.1",
+    "babel-jest": "^26.3.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-prettier": "^3.1.3",
-    "husky": "^4.2.5",
-    "jest": "^26.0.1",
-    "lint-staged": "^10.2.2",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
-    "regenerator-runtime": "^0.13.5",
-    "rimraf": "^3.0.2"
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "pretty-quick": "^2.0.2",
+    "regenerator-runtime": "^0.13.7",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.3.0",
+    "typescript": "^3.9.7"
   },
   "targets": {
     "main": {
@@ -75,7 +83,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
+    "*.ts": [
       "eslint --fix",
       "pretty-quick --staged",
       "git add"

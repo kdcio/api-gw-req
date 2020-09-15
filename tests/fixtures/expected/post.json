@@ -7,7 +7,7 @@
   },
   "ip": "",
   "userAgent": "",
-  "params": "",
+  "params": {},
   "body": { "message": "hello world" },
   "authorizer": {}
 }

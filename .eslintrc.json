@@ -1,16 +1,44 @@
 {
-  "parser": "babel-eslint",
-  "extends": ["airbnb-base", "prettier"],
-  "plugins": ["prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "prettier",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": ["prettier", "jest"],
   "rules": {
     "complexity": ["error", 5],
     "max-lines": ["error", 50],
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "@typescript-eslint/camelcase": "off"
   },
   "env": {
     "commonjs": true,
     "node": true,
     "jest": true
   },
-  "ignorePatterns": ["node_modules/", "coverage/"]
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "ignorePatterns": ["node_modules/", "coverage/", "tests/", "jest.config.js"]
 }

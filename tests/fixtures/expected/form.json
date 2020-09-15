@@ -5,7 +5,7 @@
   "headers": { "content-type": "application/x-www-form-urlencoded" },
   "ip": "",
   "userAgent": "",
-  "params": "",
+  "params": {},
   "body": { "message": "hello", "name": "world" },
   "authorizer": "dev"
 }

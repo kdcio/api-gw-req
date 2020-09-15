@@ -1,4 +1,6 @@
-const json = (body) => {
+import { BodyInput } from '../interfaces';
+
+const json = (body: string): object => {
   try {
     return JSON.parse(body);
   } catch (error) {
@@ -6,7 +8,7 @@ const json = (body) => {
   }
 };
 
-const urlEncoded = (body) => {
+const urlEncoded = (body: string): object => {
   const params = {};
 
   if (!body) return params;
@@ -20,7 +22,7 @@ const urlEncoded = (body) => {
   return params;
 };
 
-const parser = ({ contentType = '', body }) => {
+const bodyParser = ({ contentType = '', body }: BodyInput): object | string => {
   if (contentType.toLowerCase() === 'application/json') {
     return json(body);
   }
@@ -32,4 +34,4 @@ const parser = ({ contentType = '', body }) => {
   return body;
 };
 
-export default parser;
+export default bodyParser;
