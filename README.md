@@ -1,15 +1,8 @@
 # API Gateway Request Parser
 
-[![ver](https://img.shields.io/npm/v/@kdcio/api-gw-req?style=for-the-badge)](https://www.npmjs.com/package/@kdcio/api-gw-req)
-[![build](https://img.shields.io/github/workflow/status/kdcio/api-gw-req/build?style=for-the-badge)](https://github.com/kdcio/api-gw-req/actions?query=workflow%3Abuild)
-[![codecov](https://img.shields.io/codecov/c/github/kdcio/api-gw-req?style=for-the-badge)](https://codecov.io/gh/kdcio/api-gw-req)
-[![size](https://img.shields.io/bundlephobia/min/@kdcio/api-gw-req?style=for-the-badge)](https://bundlephobia.com/result?p=@kdcio/api-gw-req)
-[![license](https://img.shields.io/github/license/kdcio/api-gw-req?style=for-the-badge)](https://github.com/kdcio/api-gw-req/blob/master/LICENSE)
-
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/kdcio/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcio/api-gw-req) [![Code Issues](https://img.shields.io/codeclimate/issues/kdcio/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcio/api-gw-req/issues)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/kdcio/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcio/api-gw-req/trends/technical_debt)
-
 This module will parse the event object (that came from API Gateway) in lambda and create a new object with all unnecessary fields stripped out.
+
+[![ver](https://img.shields.io/npm/v/@kdcio/api-gw-req)](https://www.npmjs.com/package/@kdcio/api-gw-req) [![size](https://badgen.net/bundlephobia/minzip/@kdcio/api-gw-req)](https://bundlephobia.com/result?p=@kdcio/api-gw-req) [![build](https://img.shields.io/github/workflow/status/kdcio/api-gw-req/build)](https://github.com/kdcio/api-gw-req/actions?query=workflow%3Abuild) [![Known Vulnerabilities](https://snyk.io/test/github/kdcio/api-gw-req/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kdcio/api-gw-req?targetFile=package.json) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kdcio_api-gw-req&metric=alert_status)](https://sonarcloud.io/dashboard?id=kdcio_api-gw-req) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=kdcio_api-gw-req&metric=code_smells)](https://sonarcloud.io/dashboard?id=kdcio_api-gw-req) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=kdcio_api-gw-req&metric=coverage)](https://sonarcloud.io/dashboard?id=kdcio_api-gw-req) [![license](https://img.shields.io/github/license/kdcio/api-gw-req)](https://github.com/kdcio/api-gw-req/blob/master/LICENSE)
 
 ## Install
 
@@ -17,14 +10,12 @@ This module will parse the event object (that came from API Gateway) in lambda a
 npm i @kdcio/api-gw-req
 ```
 
-_Note: Breaking change from v0.1.x to 0.2.x: **pathParams** change to **params**._
-
 ## Usage
 
 ```js
-const parser = require('@kdcio/api-gw-req');
+import parser from '@kdcio/api-gw-req';
 
-module.exports = (event) => {
+export const hello = async (event) => {
   const request = parser(event);
   console.log(request);
 };
@@ -67,7 +58,7 @@ Sample `request` object:
 | headers    | object | HTTP headers                                    |
 | ip         | string | IP Address of the client                        |
 | userAgent  | string | User Agent of the http client                   |
-| pathParams | object | Path parameters if defined in API Gateway       |
+| params     | object | Path parameters if defined in API Gateway       |
 | body       | object | Body parsed as json or as urlencoded form data. |
 | authorizer | object | Authorizer object                               |
 
