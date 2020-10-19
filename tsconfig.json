@@ -1,13 +1,23 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "outDir": "./lib",
-    "rootDir": "./src",
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "es5",
     "allowJs": true,
-    "target": "es2015",
     "moduleResolution": "node",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "coverage", "jest.config.js", "tests", "lib"]
+  "include": [ "src/**/*.ts" ],
+  "exclude": [
+    "node_modules",
+    "coverage",
+    "jest.config.js",
+    "tests",
+    "dist",
+    "typings",
+    "rollup.config.js"
+  ]
 }

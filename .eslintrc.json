@@ -40,5 +40,5 @@
       }
     }
   },
-  "ignorePatterns": ["node_modules/", "coverage/", "tests/", "jest.config.js"]
+  "ignorePatterns": ["node_modules/", "coverage/", "tests/", "jest.config.js", "rollup.config.js"]
 }
