@@ -1,11 +1,11 @@
 import { ParserInput, ParserOutput } from './interfaces';
-import bodyParser from './parsers/body';
-import headerParser from './parsers/header';
-import identityParser from './parsers/identity';
-import authParser from './parsers/auth';
-import stringParser from './parsers/string';
-import objParser from './parsers/object';
-import methodParser from './parsers/method';
+import bodyParser from './parsers/bodyParser';
+import headerParser from './parsers/headerParser';
+import identityParser from './parsers/identityParser';
+import authParser from './parsers/authParser';
+import stringParser from './parsers/stringParser';
+import objParser from './parsers/objParser';
+import methodParser from './parsers/methodParser';
 
 const parser = (event: ParserInput): ParserOutput => {
   const request: ParserOutput = {
