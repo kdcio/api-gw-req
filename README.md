@@ -1,20 +1,20 @@
 # API Gateway Request Parser
 
-[![ver](https://img.shields.io/npm/v/@kdcsoftware/api-gw-req?style=for-the-badge)](https://www.npmjs.com/package/@kdcsoftware/api-gw-req)
-[![build](https://img.shields.io/github/workflow/status/kdcsoftware/api-gw-req/build?style=for-the-badge)](https://github.com/kdcsoftware/api-gw-req/actions?query=workflow%3Abuild)
-[![codecov](https://img.shields.io/codecov/c/github/kdcsoftware/api-gw-req?style=for-the-badge)](https://codecov.io/gh/kdcsoftware/api-gw-req)
-[![size](https://img.shields.io/bundlephobia/min/@kdcsoftware/api-gw-req?style=for-the-badge)](https://bundlephobia.com/result?p=@kdcsoftware/api-gw-req)
-[![license](https://img.shields.io/github/license/kdcsoftware/api-gw-req?style=for-the-badge)](https://github.com/kdcsoftware/api-gw-req/blob/master/LICENSE)
+[![ver](https://img.shields.io/npm/v/@kdcio/api-gw-req?style=for-the-badge)](https://www.npmjs.com/package/@kdcio/api-gw-req)
+[![build](https://img.shields.io/github/workflow/status/kdcio/api-gw-req/build?style=for-the-badge)](https://github.com/kdcio/api-gw-req/actions?query=workflow%3Abuild)
+[![codecov](https://img.shields.io/codecov/c/github/kdcio/api-gw-req?style=for-the-badge)](https://codecov.io/gh/kdcio/api-gw-req)
+[![size](https://img.shields.io/bundlephobia/min/@kdcio/api-gw-req?style=for-the-badge)](https://bundlephobia.com/result?p=@kdcio/api-gw-req)
+[![license](https://img.shields.io/github/license/kdcio/api-gw-req?style=for-the-badge)](https://github.com/kdcio/api-gw-req/blob/master/LICENSE)
 
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req) [![Code Issues](https://img.shields.io/codeclimate/issues/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req/issues)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/kdcsoftware/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcsoftware/api-gw-req/trends/technical_debt)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/kdcio/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcio/api-gw-req) [![Code Issues](https://img.shields.io/codeclimate/issues/kdcio/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcio/api-gw-req/issues)
+[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/kdcio/api-gw-req?style=for-the-badge)](https://codeclimate.com/github/kdcio/api-gw-req/trends/technical_debt)
 
 This module will parse the event object (that came from API Gateway) in lambda and create a new object with all unnecessary fields stripped out.
 
 ## Install
 
 ```bash
-npm i @kdcsoftware/api-gw-req
+npm i @kdcio/api-gw-req
 ```
 
 _Note: Breaking change from v0.1.x to 0.2.x: **pathParams** change to **params**._
@@ -22,7 +22,7 @@ _Note: Breaking change from v0.1.x to 0.2.x: **pathParams** change to **params**
 ## Usage
 
 ```js
-const parser = require('@kdcsoftware/api-gw-req');
+const parser = require('@kdcio/api-gw-req');
 
 module.exports = (event) => {
   const request = parser(event);
@@ -73,4 +73,4 @@ Sample `request` object:
 
 ## See also
 
-[@kdcsoftware/api-gw-resp](https://github.com/kdcsoftware/api-gw-resp)
+[@kdcio/api-gw-resp](https://github.com/kdcio/api-gw-resp)

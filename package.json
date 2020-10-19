@@ -1,5 +1,5 @@
 {
-  "name": "@kdcsoftware/api-gw-req",
+  "name": "@kdcio/api-gw-req",
   "version": "1.0.0",
   "description": "Parse API Gateway request",
   "main": "lib/index.js",
@@ -25,9 +25,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kdcsoftware/api-gw-req"
+    "url": "https://github.com/kdcio/api-gw-req"
   },
-  "homepage": "https://github.com/kdcsoftware/api-gw-req",
+  "homepage": "https://github.com/kdcio/api-gw-req",
   "license": "MIT",
   "keywords": [
     "kdc",
@@ -85,8 +85,7 @@
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
-      "pretty-quick --staged",
-      "git add"
+      "pretty-quick --staged"
     ]
   }
 }
