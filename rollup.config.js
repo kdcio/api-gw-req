@@ -11,5 +11,11 @@ export default {
     format: 'cjs',
     exports: 'default',
   },
-  plugins: [resolve(), typescript(), commonjs(), terser(), visualizer()],
+  plugins: [
+    resolve(),
+    typescript(),
+    commonjs(),
+    terser({ format: { comments: false } }),
+    visualizer(),
+  ],
 };
