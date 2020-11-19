@@ -7,5 +7,6 @@
   "userAgent": "",
   "params": {},
   "body": { "message": "hello", "name": "world" },
-  "authorizer": "dev"
+  "authorizer": "dev",
+  "stage": ""
 }

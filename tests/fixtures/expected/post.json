@@ -9,5 +9,6 @@
   "userAgent": "",
   "params": {},
   "body": { "message": "hello world" },
-  "authorizer": {}
+  "authorizer": {},
+  "stage": ""
 }

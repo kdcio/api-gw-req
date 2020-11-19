@@ -6,5 +6,6 @@
   "ip": "",
   "userAgent": "",
   "params": {},
-  "authorizer": {}
+  "authorizer": {},
+  "stage": ""
 }

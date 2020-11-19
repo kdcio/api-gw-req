@@ -113,7 +113,8 @@ Parsed object of the above event:
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36",
   "params": { "proxy": "me" },
   "body": {},
-  "authorizer": {}
+  "authorizer": {},
+  "stage": "local"
 }
 ```
 
@@ -129,6 +130,7 @@ Parsed object of the above event:
 | params     | object | Path parameters if defined in API Gateway       |
 | body       | object | Body parsed as json or as urlencoded form data. |
 | authorizer | object | Authorizer object                               |
+| stage      | string | Deployment stage                                |
 
 ## See also
 

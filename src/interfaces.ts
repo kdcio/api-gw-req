@@ -9,11 +9,14 @@ export interface RequestContext {
     userAgent: string;
   };
   authorizer: object;
+  stage: string;
 }
 
-export interface IdentityOutput {
+export interface RequestContextOutput {
   ip: string;
   userAgent: string;
+  authorizer: object;
+  stage: string;
 }
 
 export interface ParserInput {
@@ -36,5 +39,6 @@ export interface ParserOutput {
   params: object;
   headers: object;
   authorizer: object;
+  stage: string;
   body?: object | string;
 }
