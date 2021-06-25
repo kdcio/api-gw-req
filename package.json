@@ -12,7 +12,7 @@
     "bundle": "rollup -c",
     "clean": "rimraf lib dist",
     "test": "jest --no-cache",
-    "watch": "jest --watchAll",
+    "test:watch": "jest --watchAll",
     "coverage": "npm test -- --coverage",
     "lint:fix": "eslint src --ext .ts --fix",
     "lint": "eslint src --ext .ts",
