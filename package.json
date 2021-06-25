@@ -1,6 +1,6 @@
 {
   "name": "@kdcio/api-gw-req",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Parse API Gateway request",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
