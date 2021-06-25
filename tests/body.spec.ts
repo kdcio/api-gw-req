@@ -9,6 +9,12 @@ describe('Parse body', () => {
       expected: { name: 'ian', age: 10 },
     },
     {
+      description: 'should parse JSON',
+      contentType: 'application/json; charset=utf-8',
+      body: JSON.stringify({ name: 'ian', age: 10 }),
+      expected: { name: 'ian', age: 10 },
+    },
+    {
       description: 'should return empty object for invalid JSON',
       contentType: 'application/json',
       body: "{name:'ian'}",

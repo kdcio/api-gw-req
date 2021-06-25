@@ -23,7 +23,7 @@ const urlEncoded = (body: string): object => {
 };
 
 const bodyParser = ({ contentType = '', body }: BodyInput): object | string => {
-  if (contentType.toLowerCase() === 'application/json') {
+  if (contentType.toLowerCase().indexOf('application/json') >= 0) {
     return json(body);
   }
 
