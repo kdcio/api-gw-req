@@ -27,7 +27,9 @@ const bodyParser = ({ contentType = '', body }: BodyInput): object | string => {
     return json(body);
   }
 
-  if (contentType.toLowerCase() === 'application/x-www-form-urlencoded') {
+  if (
+    contentType.toLowerCase().indexOf('application/x-www-form-urlencoded') >= 0
+  ) {
     return urlEncoded(body);
   }
 
