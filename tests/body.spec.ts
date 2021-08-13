@@ -9,7 +9,7 @@ describe('Parse body', () => {
       expected: { name: 'ian', age: 10 },
     },
     {
-      description: 'should parse JSON',
+      description: 'should parse JSON with charset',
       contentType: 'application/json; charset=utf-8',
       body: JSON.stringify({ name: 'ian', age: 10 }),
       expected: { name: 'ian', age: 10 },
@@ -23,6 +23,12 @@ describe('Parse body', () => {
     {
       description: 'should parse url encoded data',
       contentType: 'application/x-www-form-urlencoded',
+      body: 'name=ian&age=10',
+      expected: { name: 'ian', age: '10' },
+    },
+    {
+      description: 'should parse url encoded data with charset',
+      contentType: 'application/x-www-form-urlencoded; charset=utf-8',
       body: 'name=ian&age=10',
       expected: { name: 'ian', age: '10' },
     },
